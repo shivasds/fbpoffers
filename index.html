@@ -1788,6 +1788,23 @@
                 </div>
             </div>
         </section>
+            <script>
+        function cityo(argument) {
+             //alert(argument);
+          if(argument=="other")
+          {
+           // alert(argument);
+            jQuery("#other").show();
+            jQuery("#othercity").prop('required',true);
+          }
+          else
+          {
+            jQuery("#other").hide();
+            jQuery("#othercity").prop('required',false);
+          }
+
+        }
+    </script>
 
 
     </div>
@@ -2570,23 +2587,7 @@
         // }
     </script>
 
-    <script>
-        function cityo(argument) {
-             //alert(argument);
-          if(argument=="other")
-          {
-           // alert(argument);
-            jQuery("#other").show();
-            jQuery("#othercity").prop('required',true);
-          }
-          else
-          {
-            jQuery("#other").hide();
-            jQuery("#othercity").prop('required',false);
-          }
 
-        }
-    </script>
 
     <script type="text/javascript">
         function save_landing_pageinfo(elm) {
