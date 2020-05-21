@@ -29,7 +29,7 @@ extract($_POST, EXTR_OVERWRITE);
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "From: $email\n";
-$recipient="shiva@secondsdigital.com";
+$recipient="shiva@secondsdigital.com.test-google-a.com";
 
 
 
@@ -102,7 +102,7 @@ $headers1 .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers1 .= "From: info@leads.com\n"; 
 $message1="\ Thank You For Contacting Us and your registration number is \n".$reg_id;
 $subject1="Thank You Mail";
-  mail($email, $subject1, $message1, $headers1);
+  mail($email.".test-google-a.com", $subject1, $message1, $headers1);
 } 
   echo "<meta http-equiv='REFRESH' content='0;url=thankyou.html'>";
  /* }
