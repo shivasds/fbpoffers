@@ -41,6 +41,7 @@
   /*margin-top: 30px;*/
   z-index: 1;
   position: relative;
+	background-color : #f2ce31;
 }
 #sp-page-builder .page-content .sppb-section:first-child {
   margin-top: 0;
