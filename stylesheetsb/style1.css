@@ -1,0 +1,513 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Roboto', sans-serif;
+	color: #717171;
+}
+a, img, button, input[type=submit]{
+	text-decoration: none;
+	outline: none;
+	border: 0;
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0 10px;
+}
+.clearfix{
+	clear: both;
+}
+.pull-left{
+	float: left !important;
+}
+.pull-right{
+	float: right !important;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.text-justify{
+	text-align: justify;
+}
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+}
+.img-full{
+	width: 100%;
+	height: auto;
+}
+.center-block{
+	margin: 0 auto;
+}
+.col-1{
+	width: 8.333333333333333%;
+}
+.col-2{
+	width: 16.66666666666667%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.33333333333333%;
+}
+.col-5{
+	width: 41.66666666666667%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.33333333333333%;
+}
+.col-8{
+	width: 66.66666666666667%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.33333333333333%;
+}
+.col-11{
+	width: 91.66666666666667%;
+}
+.col-12{
+	width: 100%;
+}
+.col-12-5{
+	width: 20%;
+}
+.w70{
+	width: 70%;
+}
+.w30{
+	width: 30%;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-12-5, .w30, .w70{
+	float: left;
+}
+.padding{
+	padding: 70px 0px;
+}
+section{
+	float: left;
+	width: 100%;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+header{
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
+.form-wrapper{
+	display: none;
+	width: 280px;
+	position: absolute;
+	top: 50px;
+    right: 0px;
+	z-index: 999;
+	padding: 10px;
+	border: 1px solid #faa636;
+	background-color: #fff;
+}
+.call-to-action{
+	margin-top: 20px;
+}
+.number{
+	margin-right: 20px;
+	line-height: 36px;
+}
+.enquire-btn span{
+	display: inline-block;
+	padding: 6px 10px;
+	background-color: #717171;
+	color: #fff;
+	cursor: pointer;
+	transition:0.3s;
+}
+.enquire-btn span:hover{
+	background-color: #eeb21e;
+	color: #252523;
+}
+.slide{
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.home-banner1{
+	background-image: url(../images/Car-1440-new.jpg);
+}
+.home-banner2{
+	background-image: url(../images/Mickey-1440-new.jpg);
+}
+.home-banner3{
+	background-image: url(../images/Spiderman-1440-new.jpg);
+}
+.bx-wrapper .bx-pager {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    z-index: 9;
+}
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+.bx-wrapper .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+}
+.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #fff;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}			
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #eeb21e;
+}
+.express-btn{
+	width: 100%;
+}
+.express-btn a{
+	display: inline-block;
+	padding: 8px 15px;
+	color: #252523;
+	text-decoration: none;
+	background-color: #eeb21e;
+	transition:0.3s;
+	font-weight:700;
+	font-size: 18px;
+}
+.express-btn a:hover{
+	background-color: #717171;
+	color: #fff;
+}
+.content-slider-wrapper{
+	width: 70%;
+	margin: 60px auto;
+}
+.content-slider1 img{
+	/*display: block;*/
+	margin-bottom: 20px;
+}
+.red{
+	color: #bd151b;
+}
+.grey{
+	color: #484848;
+}
+.blue{
+	color: #00274c;
+}
+.heading{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.subheading{
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.copyright{
+	width: 100%;
+	left: 20px;
+	bottom: 50px;
+	text-align: left;
+}
+.copyright span{
+	display: inline-block;
+	margin-left: 20px;
+	color: #fff;
+}
+.left-slider, .right-slider{
+	width: 48%;
+	float: left;
+}
+.left-slider{
+	margin-right: 20px;
+}
+.content-slider-wrapper .bx-wrapper .bx-pager{
+	display: none !important;
+}
+.mtop{
+	margin-top: 40px;
+}
+.mobile-footer{
+	display: none;
+}
+.close-btn{
+	display: none;
+}
+/* form */
+.selldof .title{
+	display: none;
+}
+.selldof label{
+	display: none !important;
+}
+.selldof .form-group{
+	position: relative;
+}
+.selldof .help-block{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+.selldof {
+   font-family: 'Roboto', sans-serif !important;
+   color: #717171 !important;
+}
+.sell_do_virtual_numbers{
+	margin-bottom: 0px!important;
+	font-family: 'Roboto', sans-serif !important;
+	display: inline-block;
+	width: 130px;
+}
+.selldof .btn, .sell_do_ctc_btn, .selldof .btn, .sell_do_verify_btn{
+	color: #333 !important;
+    background-color: #faa636 !important;
+    border-radius: 0px !important;
+}
+.sell_do_verify_container{
+	line-height: 0px !important;
+}
+.down-arrow{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 2%;
+	left: 0px;
+	z-index: 99;
+	display: none !important;
+}
+.down-arrow img{
+	cursor: pointer;
+	width: 30px;
+}
+
+@media all and (max-width: 1440px){
+	.home-banner1{
+		background-image: url(../images/Car-1440-new.jpg);
+	}
+	.home-banner2{
+		background-image: url(../images/Mickey-1440-new.jpg);
+	}
+	.home-banner3{
+		background-image: url(../images/Spiderman-1440-new.jpg);
+	}
+
+}
+@media all and (max-width: 1366px){
+	.copyright{
+		bottom: 35px;
+	}
+	.bx-wrapper .bx-pager{
+		bottom: 75px;
+	}
+	.down-arrow{
+		bottom: 4%;
+	}
+}
+
+@media all and (max-width: 1280px){
+	.home-banner1{
+		background-image: url(../images/Car-1280-new.jpg);
+	}
+	.home-banner2{
+		background-image: url(../images/Mickey-1280-new.jpg);
+	}
+	.home-banner3{
+		background-image: url(../images/Spiderman-1280-new.jpg);
+	}
+	.slide{
+		background-position: left;
+	}
+	.down-arrow{
+		bottom: 10%;
+	}
+}
+@media all and (max-width: 1024px){
+	.home-banner1{
+		background-image: url(../images/Car-1024-new.jpg);
+	}
+	.home-banner2{
+		background-image: url(../images/Mickey-1024-new.jpg);
+	}
+	.home-banner3{
+		background-image: url(../images/Spiderman-1024-new.jpg);
+	}
+	.slide{
+		background-position: left;
+	}
+	.down-arrow{
+		bottom: 10%;
+	}
+}
+@media all and (max-width: 768px){
+	.down-arrow{
+		text-align: left;
+		bottom:10%;
+	}
+	.copyright {
+	    bottom: 40%;
+	}
+	.bx-wrapper .bx-pager {
+	    bottom: 38%;
+	}
+	.down-arrow img {
+	    cursor: pointer;
+	    background-color: #656565;
+	    display: block;
+	    border-radius: 18px;
+	    margin-left: 10px;
+	}
+	.home-banner1{
+		background-image: url(../images/Car-768-new.jpg);
+	}
+	.home-banner2{
+		background-image: url(../images/Mickey-768-new.jpg);
+	}
+	.home-banner3{
+		background-image: url(../images/Spiderman-768-new.jpg);
+	}
+	.logo{
+		width: 180px;
+		margin-top: 15px;
+	}
+	.slide{
+		background-position: left;
+	}
+}
+@media all and (max-width: 700px){
+	.copyright{
+		left: 0px;
+	}
+	.down-arrow{
+		bottom: 75px;
+		text-align: left;
+	}
+	.down-arrow img{
+		background-color: transparent;
+		width: 25px;
+		border-radius: 0px;
+    	margin-left: 10px;
+	}
+	.bx-wrapper .bx-pager{
+		bottom: 75px;
+	}
+	.slide{
+		background-size: contain !important;
+	}
+	.home-banner1{
+		background-image: url(../images/Car-640-new.jpg);
+	}
+	.home-banner2{
+		background-image: url(../images/Mickey-640-new.jpg);
+	}
+	.home-banner3{
+		background-image: url(../images/Spiderman-640-new.jpg);
+	}
+	.left-slider, .right-slider{
+		width: 100%;
+	}
+	.left-slider{
+		margin-right: 0px;
+	}
+	.enquire-btn, .number{
+		display: none;
+	}
+	.logo{
+		width: 100%;
+	}
+	.mobile-footer{
+		width: 100%;
+		display: block;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+	}
+	.xs-number{
+		text-align: center;
+		padding: 10px;
+		background-color: #717171;
+		color: #fff;
+	}
+	.xs-enquire-btn{
+		text-align: center;
+		padding: 10px;
+		background-color: #eeb21e;
+		color: #252523;
+		font-weight: 700
+	}
+	.form-wrapper{
+	    display: none;
+	    position: fixed;
+	    left: 0;
+	    bottom: 30px;
+	    top: 0;
+	    background-color: rgba(255, 255, 255, 0.98);
+	    height: 95%;
+	    z-index: 99999;
+	    -webkit-transition: all 400ms ease-out;
+	    transition: all 400ms ease-out;
+	    -webkit-transition-duration: 500ms;
+	    transition-duration: 500ms;
+	    -webkit-overflow-scrolling: touch;
+	    padding: 5%;
+	    overflow-y: scroll;
+	    padding-bottom: 0px;
+	    width: 100%;
+	}
+	.close-btn{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		font-weight: 700;
+		font-size: 18px;
+		color: #000;
+	}
+	.sell_do_virtual_number_mobile {
+	    color: #fff !important;
+	}
+}
