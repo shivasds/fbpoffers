@@ -803,7 +803,7 @@
 
 #kohinoor .prop-img ,#kohinoor .prop-img img{
  background: rgb(238, 64, 47)!important;
- transition: none!important;
+ transition: none!important; 
 }
 .sppb-addon-latest-posts .latest-posts .latest-post, .sppb-addon-latest-posts .latest-posts .latest-post .latest-post-inner {
     min-height: 300px;
@@ -980,7 +980,7 @@
                                                                                     </a>
                                                                                 
                                                                                 </div>
-                                                                                <center><button class="btn btn-primary"><a href="Kohinoor/index.html" target="_blank"> View Project</a></button></center>
+                                                                                <center><button class="btn btn-primary"><a href="kohinoor/index.html" target="_blank"> View Project</a></button></center>
                                                                         
                                                                             </div>
                                                                             <!-- High Mont -->
@@ -1738,6 +1738,22 @@
                                                     <input type="text" class="form-control" placeholder="Your Message"
                                                         name="sugg" id="sugg">
                                                 </div>
+                                                <div class="col-sm-6">
+                                                    <select class="form-control" name="city" onchange="cityo(this.value)">
+                                                        <option value="">Choose You City</option>
+                                                        <option value="pune">PUNE</option>
+                                                        <option value="bangalore">BANGALORE</option>
+                                                        <option value="hyderabad">HYDERABAD</option>
+                                                        <option value="noida">NOIDA</option>
+                                                        <option value="mumbai">MUMBAI</option>
+                                                        <option value="other">Other City</option>
+
+                                                    </select> 
+                                                </div>
+                                                <div class="col-sm-6 other" id="other" hidden="">
+                                                    <input type="text" class="form-control" placeholder="Your Enter City "
+                                                        name="othercity" id="othercity">
+                                                </div>
                                                 <div class="col-sm-12">
                                                     <button type="submit" class="btn btn-default form-btn"
                                                         value="proceed">Submit
@@ -1760,7 +1776,7 @@
                             <p>The project has been registered via MahaRERA registration number P52100000917 and is available on the website https://maharera.mahaonline.gov.in under registered projects.
                                 The Contents including brochures and marketing collateral displayed/provided on this website are solely for informational purposes and is not intended to constitute an offer or solicitation as this website is under updation/reconstruction. It is Artistic impression/Schematic representation of the project shown on this site and is indicative of how the unit can be used. No furniture/s or accessories shown in the visuals are provided with the unit/tenement/apartment. This web site material does not constitutes an offer and / or contract of any type between the Developer/Promoter/Owner and the recipient, all intending purchaser/s in this project shall be governed by the terms and conditions envisaged under The Real Estate (Regulation And Development) Act 2016. Nothing on the website should be misconstrued as advertising, marketing, booking, selling or an offer for sale or invitation to purchase a unit in any project by the company/firm. The company/firm is not responsible for the consequences of any action taken by the viewer relying on such material/information on this website..</p>
                             <h2>RERA</h2>
-                            <p>RERA : A52100005036</p>
+                            <p>RERA : PRM/KA/RERA/1251/446/AG/170926/000120 | A02200000202 | A52100005036 | UPRERAAGT16640</p>
                         </div>
 
                     </div>
@@ -1829,18 +1845,63 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">×</span></button>
 
-                    <h4 class="modal-title">Enter your details to get callback!</h4>
+                    <h4 class="modal-title">Register For Fullbasket Landmark Offers</h4>
                 </div>
                 <div class="modal-body">
                     <!-- <p>Please enter the details below to get the detailed pricing information.</p> -->
                     <form id="main-popup" action="contact.php" name="main-popup" method="POST">
                         <div class="form-group col-md-12 pd">
-                            <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
+                           <input type="text" class="form-control" placeholder="Full Name"
+                                                        name="name" id="" required>
                         </div>
                         <div class="form-group col-md-12 pd">
-                            <input type="tel" placeholder="Your Phone Number" class="form-control" name="telephone"
-                                id="telephone" required>
+                            <input type="text" class="form-control"
+                                                        placeholder="Valid Email Address" name="email" id="" required>
                         </div>
+                        <div class="form-group col-md-12 pd">
+
+                                                    <input type="tel"  class="form-control" placeholder="Phone Number" name="telephone"
+                                                        id="contactform" required>
+                        </div>
+                        <div class="form-group col-md-12 pd">
+
+                                                    <input type="text" class="form-control" placeholder="Your Message"
+                                                        name="sugg" id="sugg">
+                        </div>
+                        <div class="form-group col-md-12 pd">
+
+                                                    <select class="form-control" name="city" onchange="cityo1(this.value)">
+                                                        <option value="">Choose You City</option>
+                                                        <option value="pune">PUNE</option>
+                                                        <option value="bangalore">BANGALORE</option>
+                                                        <option value="hyderabad">HYDERABAD</option>
+                                                        <option value="noida">NOIDA</option>
+                                                        <option value="mumbai">MUMBAI</option>
+                                                        <option value="other">Other City</option>
+
+                                                    </select> 
+                        </div>
+                        <div class="form-group col-md-12 pd"id="other1" hidden="">
+                                                    <input type="text" class="form-control" placeholder="Your Enter City "
+                                                        name="othercity" id="othercity1">
+                        </div>
+                        <script type="text/javascript">
+                            function cityo1(argument) {
+             //alert(argument);
+          if(argument=="other")
+          {
+           // alert(argument);
+            jQuery("#other1").show();
+            jQuery("#othercity1").prop('required',true);
+          }
+          else
+          {
+            jQuery("#other1").hide();
+            jQuery("#othercity1").prop('required',false);
+          }
+
+        }
+                        </script>
 
                         <button type="submit" class="btn btn-default price-btn" value="proceed">SUBMIT</button>
                     </form>
@@ -2503,6 +2564,23 @@
         // }
     </script>
 
+    <script>
+        function cityo(argument) {
+             //alert(argument);
+          if(argument=="other")
+          {
+           // alert(argument);
+            jQuery("#other").show();
+            jQuery("#othercity").prop('required',true);
+          }
+          else
+          {
+            jQuery("#other").hide();
+            jQuery("#othercity").prop('required',false);
+          }
+
+        }
+    </script>
 
     <script type="text/javascript">
         function save_landing_pageinfo(elm) {
