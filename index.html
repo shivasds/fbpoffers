@@ -536,36 +536,9 @@
 	background-color: white;
 }
 
-  @media only screen and (max-width: 750) {
-    .offers .card{
-    background: white;
-    text-align: center;
-    width: 100%!important;
-    height: 50px;
-    padding: 10px;
-    border-radius: 30px;
-}
-
-.offers-center .card{
-text-align: center;
-background: white;
-margin: 0 auto;
-width: 100%!important;
-    height: 50px;
-    padding: 10px ;
-    border-radius: 30px;
-}
-
-.left-offer .card{
-    float: left;
-}
-
-.right-offer .card{
-    float: right;
-} 
-  }
    
   @media only screen and (min-width: 400px) and (max-width: 766px) {
+      
     .prop-img img {
     transition: none!important;
     height: 100px!important;
@@ -598,7 +571,7 @@ width: 100%!important;
     margin: 0 20px!important;
 }
 }
-            @media only screen and (max-width: 401px) {
+ @media only screen and (max-width: 401px) {
       .prop-img img {
         transition: none!important;
     height: 100px!important;
@@ -850,37 +823,90 @@ width: 100%!important;
     color: white;
 }
  .offers .card{
-    background: white;
+    background: #29abf6;
     text-align: center;
-    width: 300px;
+    width: 366px;
     height: 50px;
+   
     padding: 10px;
-    border-radius: 30px;
+    box-shadow: 6px 13px 6px -6px #535151;
+  
 }
 
 .offers-center .card{
 text-align: center;
-background: white;
+background: #29abf6;
 margin: 0 auto;
-width: 50%;
-    height: 50px;
+width: 34%;
+    height: 75px;
     padding: 10px ;
     border-radius: 30px;
+    
 }
 
 .left-offer .card{
     float: left;
+    margin-left: -25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
 }
 
 .right-offer .card{
     float: right;
+    margin-right: -25px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #section-id-Offer{
     visibility: visible;
-    background: #ea30da!important;
+  
     padding: 40px 10px 40px;
 }
+.m-offer{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.offers .card p {
+    margin: 0 0 0px;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 17px;
+}
+.m-top h5{
+    margin-top: 20px;
+}
+   
+@media only screen and (max-width: 766px) {
+
+.offers .card {
+    background: #29abf6;
+box-shadow: 6px 13px 6px -6px #535151;
+text-align: center;
+width: 300px;
+height: auto;
+padding: 10px;
+border-radius: 30px;
+}
+
+.offers .card p {
+    margin: 0 0 0px;
+    font-weight: 600;
+    font-family: auto;
+}
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+    color: #000000;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
     
     </style>
 
@@ -935,7 +961,7 @@ width: 50%;
 
                             </div>
                             <section id="section-id-Offer" class="sppb-section  resort-title-heading wow">
-                                <div class="container-fluid">
+                                <div class="container-fluid hidden-xs">
 
                                     <div class="row offers">
                                         <div class="col-lg-6 left left-offer">
@@ -949,7 +975,7 @@ width: 50%;
                                         <div class="col-lg-6 right right-offer">
                                              <div class="card">
                                               <p>
-                                                Home loan with 0% processing fee.
+                                                Free Interior consultation
                                             </p>
                                             </div>
                                         </div>
@@ -957,11 +983,12 @@ width: 50%;
                                     </div>
 
                                     
-                                        <div class="col-lg-12 offers-center">
+                                        <div class="col-lg-12 offers offers-center">
                                             <div class="card">
                                                
                                                 <p>
-                                                    Bumper draw for one client - International Holiday for a family
+                                                    Bumper draw for one client - 
+                                                    <br>International Holiday for a family
                                                 </p>
                                               </div>
                                         </div>
@@ -970,7 +997,8 @@ width: 50%;
                                             <div class="col-lg-6 left left-offer">
                                                 <div class="card">
                                                 <p>
-                                                    Free Interior consultation
+                                                   
+                                                    Home loan with 0% processing fee.
                                                 </p>
                                                 </div>
     
@@ -984,6 +1012,74 @@ width: 50%;
                                             </div>
     
                                         </div>
+
+<br>
+<br>
+
+<br>
+<br>
+                                        <h3 class="text-center m-top"><font class="blink_me">Registration Period from 22 May 2020 t0 10 June 2020</font></h3>
+                                  
+
+                                </div>
+
+                                <div class="container-fluid hidden-lg">
+
+                                    <div class="row offers">
+                                        <div class="col-lg-6 m-offer">
+                                            <div class="card">
+                                            <p>
+                                                Best price Guarantee
+                                            </p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-lg-6 m-offer ">
+                                             <div class="card">
+                                              <p>
+                                                Home loan with 0% processing fee.
+                                            </p>
+                                            </div>
+                                        </div>
+
+                                   
+                                        <div class="col-lg-6 m-offer">
+                                            <div class="card">
+                                               
+                                                <p>
+                                                    Bumper draw for one client - International Holiday for a family
+                                                </p>
+                                              </div>
+                                        </div>
+
+                                        
+                                            <div class="col-lg-6 m-offer">
+                                                <div class="card">
+                                                <p>
+                                                    Free Interior consultation
+                                                </p>
+                                                </div>
+    
+                                            </div>
+                                            <div class="col-lg-6 m-offer">
+                                                 <div class="card">
+                                                    <p>
+                                                        Assured gifts through scratch cards
+                                                  </p>
+                                                </div>
+                                            </div>
+
+                                            
+<br>
+<br>
+                                        <h5 class="text-center m-top"><font class="blink_me">Registration Period from 
+                                            <br>
+                                            <br>22 May 2020 t0 10 June 2020</font></h5>
+                               
+    
+                                    </div>    
                                   
 
                                 </div>
