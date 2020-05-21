@@ -2,18 +2,35 @@
 // error_reporting(E_ALL);
 //echo phpinfo();
 //exit;
+require_once("dbcon.php");
 $name=$_POST['name'];
 $telephone=$_POST['telephone'];
 $email=$_POST['email'];
 $sugg=$_POST['sugg'];
+$city =  $_POST['city'];
+$other = $_POST['othercity'];
+$builder='';
+$project ='';
+$last_id ='';
+$date = date('Y-m-d H:s:i');
+$sql = "INSERT INTO leads (name, mobile, email, message, date_added, city, builder, project,othercity)
+                    VALUES ('$name','$telephone','$email','$sugg','$date','$city','$builder','$project','$other')";
 
+if ($conn->query($sql) === TRUE) {
+    $last_id = $conn->insert_id;
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
+$reg_id = trim("LANDMARK-1011".sprintf("%'.06d",$last_id).PHP_EOL);
+//echo $reg_id;die;
 extract($_POST, EXTR_OVERWRITE);
 
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "From: $email\n";
-$recipient="priyankar@fullbasketproperty.com,fbp.leads@gmail.com,crm@fullbasketproperty.com";
+$recipient="shiva@secondsdigital.com";
+
 
 
 $message="\Full Basket Properties Offers \n";
@@ -70,9 +87,24 @@ $message = '<table width="500" border="0" align="left" cellpadding="0" cellspaci
   
  // echo $message: exit;
  //Send Mail
-//===========
-mail($recipient, $subject, $message, $headers);
- 	echo "<meta http-equiv='REFRESH' content='0;url=thankyou.html'>";
+//=========== 
+ mail($recipient, $subject, $message, $headers);
+$myfile = fopen("count.txt", "r") or die("Unable to open file!");
+$value =  fread($myfile,filesize("count.txt")); 
+$myfile = fopen("count.txt", "w") or die("Unable to open file!");
+$txt = $value-1;
+fwrite($myfile, $txt); 
+fclose($myfile);
+if($email!="")
+{ 
+$headers1  = "MIME-Version: 1.0\r\n";
+$headers1 .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers1 .= "From: info@leads.com\n"; 
+$message1="\ Thank You For Contacting Us and your registration number is \n".$reg_id;
+$subject1="Thank You Mail";
+  mail($email, $subject1, $message1, $headers1);
+} 
+  echo "<meta http-equiv='REFRESH' content='0;url=thankyou.html'>";
  /* }
 else{
  // print_r(error_get_last());
