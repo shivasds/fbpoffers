@@ -83,6 +83,10 @@ $message = '<table width="500" border="0" align="left" cellpadding="0" cellspaci
     <td width="250" style="border: 1px solid #CCC; border-right:none; padding:10px;">Message</td>
     <td width="250" style="border: 1px solid #CCC; padding:10px;">'.$sugg.'</td>
   </tr>
+  <tr>
+    <td width="250" style="border: 1px solid #CCC; border-right:none; padding:10px;">Registration ID</td>
+    <td width="250" style="border: 1px solid #CCC; padding:10px;">'.$reg_id.'</td>
+  </tr>
   </table>';
   
  // echo $message: exit;
