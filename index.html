@@ -51,6 +51,11 @@
     <link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style type="text/css">
+        #sp-page-builder .page-content .sppb-section, #sp-page-builder .sppb-section {
+    z-index: 1;
+    position: relative; 
+    background-color: #f2ce31;
+}
             #sppb-addon-1507611918 .sppb-addon-title {
                 margin-bottom: 40px;
             }
@@ -1825,7 +1830,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- <p>Please enter the details below to get the detailed pricing information.</p> -->
-                    <form id="main-popup" action="callback.php" name="main-popup" method="POST">
+                    <form id="main-popup" action="contact.php" name="main-popup" method="POST">
                         <div class="form-group col-md-12 pd">
                             <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
                         </div>
@@ -1857,7 +1862,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- <p>Please enter the details below to get the detailed pricing information.</p> -->
-                    <form id="price-popup" action="p-contact.php" name="main-popup" method="POST">
+                    <form id="price-popup" action="contact.php" name="main-popup" method="POST">
                         <div class="form-group col-md-12 pd">
                             <input type="text" class="form-control" placeholder="Name" name="name" id="name">
                         </div>
