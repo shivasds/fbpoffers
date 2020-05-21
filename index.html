@@ -278,7 +278,7 @@
             }
 
             .prop-div,
-            .prop-img-div {
+            .prop-img {
                 position: relative;
                 overflow: hidden;
                 transition: ease all 1s;
@@ -529,8 +529,8 @@
                 background: #38a1fb;
                 border: 2px solid;
             }
-            .prop-img-div img {
-    transition: ease all 1s;
+            .prop-img img {
+                transition: none!important;
     height: 150px;
     padding: 22px;
 	background-color: white;
@@ -543,12 +543,12 @@
 
     }
     
-     @media only screen and (min-width: 1601px) {
+  @media only screen and (min-width: 1601px) {
    
   }
   @media only screen and (min-width: 400px) and (max-width: 766px) {
-    .prop-img-div img {
-    transition: ease all 1s;
+    .prop-img img {
+    transition: none!important;
     height: 100px!important;
     padding: 13px!important;
 }
@@ -557,13 +557,14 @@
     width: 106px!important;
     height: 106px!important;
 }
-    .sppb-addon-latest-posts .latest-posts .latest-post, .sppb-addon-latest-posts .latest-posts .latest-post .latest-post-inner {
-    min-height: 100px;
-    min-height: 130px;
-    max-height: 180px;
-    margin-left: 19px;
+.sppb-addon-latest-posts .latest-posts .latest-post, .sppb-addon-latest-posts .latest-posts .latest-post .latest-post-inner {
+    min-height: 300px;
+    min-height: 171px;
+    max-height: 188px;
+    margin-left: 1px!important;
     float: left;
-    margin-right: 19px;
+    width: 135px!important;
+    margin-right: 1px!important;
 }
                
         
@@ -579,15 +580,15 @@
 }
 }
             @media only screen and (max-width: 401px) {
-      .prop-img-div img {
-    transition: ease all 1s;
+      .prop-img img {
+        transition: none!important;
     height: 100px!important;
     padding: 13px!important;
 }
      .prop-div {
     border-radius: 100px;
-    width: 106px!important;
-    height: 106px!important;
+    width: 100px!important;
+    height: 100px!important;
 }
                 .sppb-addon-latest-posts .latest-posts .latest-post, .sppb-addon-latest-posts .latest-posts .latest-post .latest-post-inner {
     min-height: 100px;
@@ -613,9 +614,10 @@
     min-height: 100px;
     min-height: 135px!important;
     max-height: 100px!important;
-    margin-left: 6px!important;
+    margin-left: 16px!important;
     width: 100px!important;
-    margin-right: 6px!important;
+    margin-right: 16%!important;
+
 }
                 #count{
                     display: none;
@@ -799,8 +801,9 @@
   height: 150px;
 }
 
-#kohinoor .prop-img-div ,#kohinoor .prop-img-div img{
+#kohinoor .prop-img ,#kohinoor .prop-img img{
  background: rgb(238, 64, 47)!important;
+ transition: none!important;
 }
 .sppb-addon-latest-posts .latest-posts .latest-post, .sppb-addon-latest-posts .latest-posts .latest-post .latest-post-inner {
     min-height: 300px;
@@ -931,7 +934,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('VTP');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="VTP/images/VTP.png"
                                                                                                 class="full-width"
@@ -950,7 +953,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('KOLTE PATIL');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Kolte Patil/images/Kolte.jpg"
                                                                                                 class="full-width"
@@ -968,7 +971,7 @@
                                                                             <div class="latest-post round sppb-col-sm-2">
                                                                                 <div class="prop-div">
                                                                                     <a class="move" id="kohinoor" onclick="pricePopProjectname('Kohinoor');">
-                                                                                        <div class="prop-img-div" >
+                                                                                        <div class="prop-img" >
 
                                                                                             <img src="kohinoor/images/Kohinoor.png"  class="full-width"  alt="Kohinoor" >
                                                                                         
@@ -985,7 +988,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Mittal High Mont');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="high mont/images/logo.png"
                                                                                                 class="full-width"
@@ -1003,7 +1006,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Puravankara');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Puravankara/images/logo.png"
                                                                                                 class="full-width"
@@ -1021,7 +1024,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Embassy');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Embassy/images/logo.png"
                                                                                                 class="full-width"
@@ -1040,7 +1043,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Sona ');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Sona/images/logo.png"
                                                                                                 class="full-width"
@@ -1059,7 +1062,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Brigade ');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Brigade/images/brigade.png"
                                                                                                 class="full-width"
@@ -1079,7 +1082,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move" id="kohinoor"
                                                                                         onclick="pricePopProjectname('Goyal');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Goyal/images/goyal.png"
                                                                                                 class="full-width"
@@ -1097,7 +1100,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Assetz');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Assetz/images/assetz.png"
                                                                                                 class="full-width"
@@ -1116,7 +1119,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Vaishnavi');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Vaishnavi/images/vaishnavi.png"
                                                                                                 class="full-width"
@@ -1134,7 +1137,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Indis');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Indis/images/indis.svg"
                                                                                                 class="full-width"
@@ -1153,7 +1156,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Ramkey');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Ramkey/images/Ramky.png"
                                                                                                 class="full-width"
@@ -1172,7 +1175,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Ace');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Ace/images/logo.png"  class="full-width"  alt="Ace">
                                                                                         
@@ -1189,7 +1192,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('ATS');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Ats/images/logo.png"  class="full-width"  alt="ATS">
                                                                                         
@@ -1205,7 +1208,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Gulshan');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Gulshan/images/gulshan.png"  class="full-width"  alt="Gulshan">
                                                                                         
@@ -1221,7 +1224,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Commercial');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Crc/images/crc.png"  class="full-width"  alt="Commercial">
                                                                                         
@@ -1237,7 +1240,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Hiranandani');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Hiranandani/images/Hiranandani.png"  class="full-width"  alt="Hiranandani">
                                                                                         
@@ -1254,7 +1257,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Arvind Smartspaces');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Arvind Smartspace/images/logo.jpg"  class="full-width"  alt="Arvind Smartspaces">
                                                                                         
@@ -1271,7 +1274,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Countryside');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Countryside/images/logo.jpg"  class="full-width"  alt="Countryside">
                                                                                         
@@ -1294,7 +1297,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('VTP');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="VTP/images/VTP.png"
                                                                                                 class="full-width"
@@ -1313,7 +1316,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('KOLTE PATIL');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Kolte Patil/images/Kolte.jpg"
                                                                                                 class="full-width"
@@ -1331,7 +1334,7 @@
                                                                             <div class="latest-post round sppb-col-sm-2">
                                                                                 <div class="prop-div">
                                                                                     <a class="move" id="kohinoor" onclick="pricePopProjectname('Kohinoor');">
-                                                                                        <div class="prop-img-div" >
+                                                                                        <div class="prop-img" >
 
                                                                                             <img src="kohinoor/images/Kohinoor.png"  class="full-width"  alt="Kohinoor" >
                                                                                         
@@ -1349,7 +1352,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Mittal High Mont');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="high mont/images/logo.png"
                                                                                                 class="full-width"
@@ -1367,7 +1370,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Puravankara');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Puravankara/images/logo.png"
                                                                                                 class="full-width"
@@ -1391,7 +1394,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Embassy');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Embassy/images/logo.png"
                                                                                                 class="full-width"
@@ -1410,7 +1413,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Sona ');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Sona/images/logo.png"
                                                                                                 class="full-width"
@@ -1429,7 +1432,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Brigade ');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Brigade/images/brigade.png"
                                                                                                 class="full-width"
@@ -1449,7 +1452,7 @@
                                                                                     <a class="move"
 
                                                                                         onclick="pricePopProjectname('KOLTE PATIL');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Kolte Patil/images/Kolte.jpg"
                                                                                                 class="full-width"
@@ -1468,7 +1471,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Puravankara');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Puravankara/images/logo.png"
                                                                                                 class="full-width"
@@ -1487,7 +1490,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move" id="kohinoor"
                                                                                         onclick="pricePopProjectname('Goyal');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Goyal/images/goyal.png"
                                                                                                 class="full-width"
@@ -1505,7 +1508,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Assetz');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Assetz/images/assetz.png"
                                                                                                 class="full-width"
@@ -1524,7 +1527,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Vaishnavi');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Vaishnavi/images/vaishnavi.png"
                                                                                                 class="full-width"
@@ -1545,7 +1548,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Indis');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Indis/images/indis.svg"
                                                                                                 class="full-width"
@@ -1564,7 +1567,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Ramkey');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Ramkey/images/Ramky.png"
                                                                                                 class="full-width"
@@ -1585,7 +1588,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Ace');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Ace/images/logo.png"  class="full-width"  alt="Ace">
                                                                                         
@@ -1601,7 +1604,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('ATS');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Ats/images/logo.png"  class="full-width"  alt="ATS">
                                                                                         
@@ -1617,7 +1620,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Gulshan');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Gulshan/images/gulshan.png"  class="full-width"  alt="Gulshan">
                                                                                         
@@ -1633,7 +1636,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Commercial');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Crc/images/crc.png"  class="full-width"  alt="Commercial">
                                                                                         
@@ -1651,7 +1654,7 @@
                                                                                 <div class="prop-div">
                                                                                     <a class="move"
                                                                                         onclick="pricePopProjectname('Hiranandani');">
-                                                                                        <div class="prop-img-div">
+                                                                                        <div class="prop-img">
 
                                                                                             <img src="Hiranandani/images/Hiranandani.png"  class="full-width"  alt="Hiranandani">
                                                                                         
@@ -2487,17 +2490,17 @@
             jQuery('#price-pop').modal('show');
         }
 
-        setTimeout(function(){jQuery("#center-modal").modal('show')},5000)
+        // setTimeout(function(){jQuery("#center-modal").modal('show')},5000)
 
-        function rightmodalopentiming(){
+        // function rightmodalopentiming(){
            
-            //jQuery("#myModalright").modal('show')
-            setTimeout(function(){ jQuery("#myModalright").modal('show') }, 5000);
-        }
-        function leftmodalopentiming(){
-            //jQuery("#myModalleft").modal('show')
-            setTimeout(function(){ jQuery("#myModalleft").modal('show') }, 5000);
-        }
+        //     //jQuery("#myModalright").modal('show')
+        //     setTimeout(function(){ jQuery("#myModalright").modal('show') }, 5000);
+        // }
+        // function leftmodalopentiming(){
+        //     //jQuery("#myModalleft").modal('show')
+        //     setTimeout(function(){ jQuery("#myModalleft").modal('show') }, 5000);
+        // }
     </script>
 
 
