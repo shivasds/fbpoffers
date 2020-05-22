@@ -2435,8 +2435,17 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
         });
     </script>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
         jQuery(document).ready(function ($) {
+
+            jQuery(".middle").hover(function() { 
+    var parentDiv=jQuery(this).closest('.prop-img-div');
+    console.log(parentDiv)
+    jQuery(parentDiv[0]).find('img').css("opacity", ".3"); 
+  }, function() { 
+    jQuery('.prop-img-div img').css("opacity", "1"); 
+  }); 
+
             wow = new WOW({
                 boxClass: 'wow',
                 animateClass: 'animated',
