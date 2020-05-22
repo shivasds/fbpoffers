@@ -1,11 +1,11 @@
 <?php
 $servername = "localhost";
-$database = "fbp_landmark";
-$username = "root";
-$password = "";
 // $database = "fbp_landmark";
-// $username = "fbp_landmark";
-// $password = "5Ifm^5b6";
+// $username = "root";
+// $password = "";
+$database = "fbp_landmark";
+$username = "fbp_landmark";
+$password = "5Ifm^5b6";
 // Create connection
 $conn = new mysqli($servername, $username, $password,$database);
 
