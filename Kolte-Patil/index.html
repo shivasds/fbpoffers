@@ -943,7 +943,9 @@
                                                                                                         Onwards<sup>*</sup>
                                                                                                     </p>
                                                                                                     <div class="middle">
-                                                                                        <button class="btn btn-success text" onclick="pricePopProjectname('Western Avenue','  Wakad, Pune');" >Register</button>
+
+                                                                                        <button class="btn btn-success text" onclick="pricePopProjectname('Western Avenue',' Wakad, Pune');" >Register</button>
+
                                                                                       </div>
                                                                                                 </div>
                                                                                             </a>
@@ -1019,8 +1021,9 @@
 
                                                                                     <div class="latest-post sppb-col-sm-4">
                                                                                         <div class="prop-div">
-                                                                                            <a class="move"
-                                                                                               >
+ 
+                                                                                            <a class="move" >
+ 
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../images/3.jpg"
@@ -1032,9 +1035,11 @@
                                                                                                         ₹ 67 Lakh
                                                                                                         Onwards<sup>*</sup>
                                                                                                     </p>
-                                                                                                    <div class="middle">
-                                                                                                        <button class="btn btn-success text" onclick="pricePopProjectname(' Green Olive',' Hinjewadi, Pune');" >Register</button>
-                                                                                                      </div>
+
+                                                                                                            <div class="middle">
+                                                                                        <button class="btn btn-success text" onclick="pricePopProjectname('Green Olive',' Hinjewadi, Pune');" >Register</button>
+                                                                                      </div>
+
                                                                                                 </div>
                                                                                             </a>
                                                                                             <div class="prop-details">
@@ -2287,7 +2292,6 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
     <!-- ============================================= -->
     <!-- ================ price popup ==================== -->
 
-
     <div class="modal fade in" tabindex="-1" role="dialog" id="price-pop" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -2311,6 +2315,7 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
                         <div class="form-group col-md-12 pd">
                             <input type="email" class="form-control" name="email" placeholder="Email">
                         </div>
+                        <input type="hidden" name="builder" id="builder" value="">
                         
                         <input type="hidden" name="enqproject" id="enqproject" value="" />
                         <input type="hidden" name="address" id="addressmodelInput" value="" />
@@ -2321,6 +2326,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
         </div><!-- /.modal-dialog -->
     </div>
 
+    <script>
+        
+        var URL = window.location; 
+        document.getElementById("builder").value = URL;
+
+
+    </script>
     <div class="modal fade" id="center-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
