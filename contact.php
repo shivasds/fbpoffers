@@ -6,7 +6,12 @@ require_once("dbcon.php");
 $name=$_POST['name'];
 $telephone=$_POST['telephone'];
 $email=$_POST['email'];
+$sugg='-';
+$project='-';
+$builder='-';
+$city='-';
 $sugg=isset($_POST['sugg']);
+
 if(isset($_POST['city']))
 {
   if($_POST['city']!=1)
