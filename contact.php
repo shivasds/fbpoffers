@@ -6,11 +6,37 @@ require_once("dbcon.php");
 $name=$_POST['name'];
 $telephone=$_POST['telephone'];
 $email=$_POST['email'];
-$sugg=$_POST['sugg'];
-$city =  isset($_POST['city'])?isset($_POST['city']):'';
-$other = isset($_POST['othercity'])?isset($_POST['othercity']):'';
+$sugg=isset($_POST['sugg']);
+if(isset($_POST['city']))
+{
+  if($_POST['city']!=1)
+    $city= $_POST['city'];
+  else
+    $city = $_POST['address'];
+}
+else
+$city = $_POST['address']; 
+if(isset($_POST['enqproject']))
+{
+  if($_POST['enqproject']!=1)
+    $project= $_POST['enqproject'];
+  else
+    $project = $_POST['enqproject'];
+}
+else
+$project = $_POST['enqproject']; 
+
+$other = isset($_POST['othercity'])?$_POST['othercity']:'';
 $builder='';
-$project ='';
+if(isset($_POST['builder']))
+{ 
+  $uri_segments = explode('/', $_POST['builder']);
+
+  $builder = $uri_segments[3]; 
+  
+  $builder = str_replace("-"," ",$builder);
+
+}
 $last_id ='';
 $date = date('Y-m-d H:s:i');
 $sql = "INSERT INTO leads (name, mobile, email, message, date_added, city, builder, project,othercity)
@@ -82,6 +108,18 @@ $message = '<table width="500" border="0" align="left" cellpadding="0" cellspaci
   <tr>
     <td width="250" style="border: 1px solid #CCC; border-right:none; padding:10px;">Message</td>
     <td width="250" style="border: 1px solid #CCC; padding:10px;">'.$sugg.'</td>
+  </tr>
+   <tr>
+    <td width="250" style="border: 1px solid #CCC; border-right:none; padding:10px;">Builder</td>
+    <td width="250" style="border: 1px solid #CCC; padding:10px;">'.$builder.'</td>
+  </tr>
+   <tr>
+    <td width="250" style="border: 1px solid #CCC; border-right:none; padding:10px;">Project</td>
+    <td width="250" style="border: 1px solid #CCC; padding:10px;">'.$project.'</td>
+  </tr>
+   <tr>
+    <td width="250" style="border: 1px solid #CCC; border-right:none; padding:10px;">City</td>
+    <td width="250" style="border: 1px solid #CCC; padding:10px;">'.$city.'</td>
   </tr>
   <tr>
     <td width="250" style="border: 1px solid #CCC; border-right:none; padding:10px;">Registration ID</td>
