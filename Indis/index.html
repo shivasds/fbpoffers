@@ -851,7 +851,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Indis/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="PBEL City">
                                                                                                     <p class="prop-name">
                                                                                                         PBEL City</p>
@@ -934,7 +934,7 @@
                                                                                                                     onclick="pricePopProjectname('ONE CITY');">
                                                                                                                     <div class="prop-img-div">
                                                                                                                         <img src="../Indis/images/2.jpg"
-                                                                                                                            class="full-width"
+                                                                                                                            class="full-width image"
                                                                                                                             alt=" ONE CITY">
                                                                                                                         <p class="prop-name">
                                                                                                                             ONE CITY
@@ -1015,7 +1015,7 @@
                                                                                                 onclick="pricePopProjectname('VB City');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Indis/images/3.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" VB City">
                                                                                                     <p class="prop-name">
                                                                                                     VB City
@@ -1096,7 +1096,7 @@
                                                                                                 onclick="pricePopProjectname('VIVA CITY');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Indis/images/4.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" VIVA CITY">
                                                                                                     <p class="prop-name">
                                                                                                     VIVA CITY
@@ -1970,10 +1970,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

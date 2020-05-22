@@ -851,7 +851,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../High-mont/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Mittal high mont">
                                                                                                     <p class="prop-name">
                                                                                                        Mittal high mont</p>
@@ -1733,10 +1733,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

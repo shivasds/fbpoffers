@@ -852,7 +852,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Sona/images/1.jpeg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Sona vistaas">
                                                                                                     <p class="prop-name">
                                                                                                        Sona vistaas</p>
@@ -1731,10 +1731,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

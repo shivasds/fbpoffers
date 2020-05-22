@@ -850,7 +850,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Hiranandani/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="ATHENA">
                                                                                                     <p class="prop-name">
                                                                                                         ATHENA</p>
@@ -935,7 +935,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Hiranandani/images/2.JPG"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="BARCA ">
                                                                                                     <p class="prop-name">
                                                                                                         BARCA </p>
@@ -1021,7 +1021,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Hiranandani/images/3.JPG"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="SOLITAIRE B & C">
                                                                                                     <p class="prop-name">
                                                                                                         SOLITAIRE B & C</p>
@@ -1106,7 +1106,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Hiranandani/images/4.JPG"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="SENINA">
                                                                                                     <p class="prop-name">
                                                                                                         SENINA</p>
@@ -1191,7 +1191,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Hiranandani/images/5.JPG"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="CANARY">
                                                                                                     <p class="prop-name">
                                                                                                         CANARY</p>
@@ -1276,7 +1276,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Hiranandani/images/6.JPG"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="CARDINAL">
                                                                                                     <p class="prop-name">
                                                                                                         CARDINAL</p>
@@ -1361,7 +1361,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Hiranandani/images/7.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="EAGLERIDGE">
                                                                                                     <p class="prop-name">
                                                                                                         EAGLERIDGE</p>
@@ -2239,10 +2239,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

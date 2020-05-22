@@ -852,7 +852,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Crc/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Sublimis ">
                                                                                                     <p class="prop-name">
                                                                                                         Sublimis </p>
@@ -1729,10 +1729,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

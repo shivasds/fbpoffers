@@ -851,7 +851,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Goyal/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Orchid piccadilly">
                                                                                                     <p class="prop-name">
                                                                                                         Orchid piccadilly</p>
@@ -937,7 +937,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Goyal/images/2.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Orchid whitefield">
                                                                                                     <p class="prop-name">
                                                                                                         Orchid whitefield</p>
@@ -1022,7 +1022,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Goyal/images/3.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Orchid greens">
                                                                                                     <p class="prop-name">
                                                                                                         Orchid greens</p>
@@ -1107,7 +1107,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Goyal/images/4.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Orchid nirvana">
                                                                                                     <p class="prop-name">
                                                                                                         Orchid nirvana</p>
@@ -1192,7 +1192,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Goyal/images/5.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Alanoville">
                                                                                                     <p class="prop-name">
                                                                                                         Alanoville</p>
@@ -2072,10 +2072,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
  

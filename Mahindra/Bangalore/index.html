@@ -850,7 +850,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../../images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Life Republic">
                                                                                                     <p class="prop-name">
                                                                                                         Life Republic</p>
@@ -1257,10 +1257,9 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
                         <div class="form-group col-md-12 pd">
                             <input type="email" class="form-control" name="email" placeholder="Email">
                         </div>
-                        <div class="form-group col-md-12 pd">
-                            <input type="text" class="form-control" placeholder="Your Message" name="sugg" id="sugg">
-                        </div>
+                        
                         <input type="hidden" name="enqproject" id="enqproject" value="" />
+                        <input type="hidden" name="address" id="addressmodelInput" value="" />
                         <button type="submit" onclick="rightmodalopentiming()" class="btn btn-default price-btn" value="proceed">SUBMIT</button>
                     </form>
                 </div>
@@ -1724,10 +1723,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

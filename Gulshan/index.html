@@ -853,7 +853,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Gulshan/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Gulshia Botnia">
                                                                                                     <p class="prop-name">
                                                                                                         Gulshia Botnia</p>
@@ -1729,10 +1729,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

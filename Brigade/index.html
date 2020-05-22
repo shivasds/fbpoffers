@@ -851,7 +851,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Brigade/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Brigade Cornstone Utopia">
                                                                                                     <p class="prop-name">
                                                                                                        Brigade Cornstone Utopia</p>
@@ -936,7 +936,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Brigade/images/2.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="BRIGADE WOODS">
                                                                                                     <p class="prop-name">
                                                                                                         BRIGADE WOODS</p>
@@ -1022,7 +1022,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Brigade/images/3.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" BRIGADE BUENA VISTA - PH2">
                                                                                                     <p class="prop-name">
                                                                                                          BRIGADE BUENA VISTA - PH2</p>
@@ -1108,7 +1108,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Brigade/images/4.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="BRIGADE EXOTICA">
                                                                                                     <p class="prop-name">
                                                                                                         BRIGADE EXOTICA</p>
@@ -1193,7 +1193,7 @@
                                                                                                                     onclick="pricePopProjectname('BRIGADE LAKEFRONT');">
                                                                                                                     <div class="prop-img-div">
                                                                                                                         <img src="../Brigade/images/5.jpg"
-                                                                                                                            class="full-width"
+                                                                                                                            class="full-width image"
                                                                                                                             alt=" BRIGADE LAKEFRONT">
                                                                                                                         <p class="prop-name">
                                                                                                                             BRIGADE LAKEFRONT
@@ -1274,7 +1274,7 @@
                                                                                                 onclick="pricePopProjectname('BRIGADE BRICKLANE');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Brigade/images/6.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" BRIGADE BRICKLANE">
                                                                                                     <p class="prop-name">
                                                                                                     BRIGADE BRICKLANE
@@ -1356,7 +1356,7 @@
                                                                                                 onclick="pricePopProjectname('MEADOWS – PLUMERIA LIFESTYLE');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Brigade/images/8.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" MEADOWS – PLUMERIA LIFESTYLE">
                                                                                                     <p class="prop-name">
                                                                                                     MEADOWS – PLUMERIA LIFESTYLE
@@ -1437,7 +1437,7 @@
                                                                                                 onclick="pricePopProjectname('BRIGADE ELDORADO');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Brigade/images/9.jpg" style="height: 197px;"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" BRIGADE ELDORADO">
                                                                                                     <p class="prop-name">
                                                                                                     BRIGADE ELDORADO
@@ -1517,7 +1517,7 @@
                                                                                                 onclick="pricePopProjectname('KINO at BRIGADE ORCHARDS');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Brigade/images/10.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" KINO at BRIGADE ORCHARDS">
                                                                                                     <p class="prop-name">
                                                                                                     KINO at BRIGADE ORCHARDS
@@ -1597,7 +1597,7 @@
                                                                                                 onclick="pricePopProjectname('BRIGADE OMEGA');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Brigade/images/11.jpg" style="height: 197px;"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" BRIGADE OMEGA">
                                                                                                     <p class="prop-name">
                                                                                                     BRIGADE OMEGA
@@ -1677,7 +1677,7 @@
                                                                                                     onclick="pricePopProjectname('BRIGADE PANORAMA - PH2');">
                                                                                                     <div class="prop-img-div">
                                                                                                         <img src="../Brigade/images/12.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" BRIGADE PANORAMA - PH2">
                                                                                                         <p class="prop-name">
                                                                                                         BRIGADE PANORAMA - PH2
@@ -1758,7 +1758,7 @@
                                                                                                     onclick="pricePopProjectname('BRIGADE ATMOSPHERE');">
                                                                                                     <div class="prop-img-div">
                                                                                                         <img src="../Brigade/images/13.jpg" style="height: 197px;"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" BRIGADE ATMOSPHERE">
                                                                                                         <p class="prop-name">
                                                                                                         BRIGADE ATMOSPHERE
@@ -2636,10 +2636,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

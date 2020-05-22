@@ -852,7 +852,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../kohinoor/images/Abhimaan.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" Abhiman Homes">
                                                                                                     <p class="prop-name">
                                                                                                         Abhiman Homes</p>
@@ -938,7 +938,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../kohinoor/images/Tinsel County - Project listing.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Tinsel County">
                                                                                                     <p class="prop-name">
                                                                                                         Tinsel County</p>
@@ -1024,7 +1024,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../kohinoor/images/Group 2992.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Falcon">
                                                                                                     <p class="prop-name">
                                                                                                         Falcon</p>
@@ -1110,7 +1110,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../kohinoor/images/Highpoint.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="High Point">
                                                                                                     <p class="prop-name">
                                                                                                         High Point</p>
@@ -1195,7 +1195,7 @@
                                                                                                                     onclick="pricePopProjectname('Kohinoor Sapphire');">
                                                                                                                     <div class="prop-img-div">
                                                                                                                         <img src="../kohinoor/images/spphire.jpg"
-                                                                                                                            class="full-width"
+                                                                                                                            class="full-width image"
                                                                                                                             alt=" Kohinoor Sapphire">
                                                                                                                         <p class="prop-name">
                                                                                                                             Kohinoor Sapphire
@@ -1276,7 +1276,7 @@
                                                                                                 onclick="pricePopProjectname('Tinsel Town 2');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../kohinoor/images/tinsel_town-_2.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" Tinsel Town 2">
                                                                                                     <p class="prop-name">
                                                                                                     Tinsel Town 2
@@ -1356,7 +1356,7 @@
                                                                                                     onclick="pricePopProjectname('Coral');">
                                                                                                     <div class="prop-img-div">
                                                                                                         <img src="../kohinoor/images/coral.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" Coral">
                                                                                                         <p class="prop-name">
                                                                                                         Coral
@@ -1435,7 +1435,7 @@
                                                                                                                         onclick="pricePopProjectname('Tinsel Phase 3');">
                                                                                                                         <div class="prop-img-div">
                                                                                                                             <img src="../kohinoor/images/Tinsel-County-3.jpg"
-                                                                                                                                class="full-width"
+                                                                                                                                class="full-width image"
                                                                                                                                 alt=" Tinsel Phase 3">
                                                                                                                             <p class="prop-name">
                                                                                                                                 Tinsel Phase 3
@@ -1514,7 +1514,7 @@
                                                                                                                             onclick="pricePopProjectname('courtyard');">
                                                                                                                             <div class="prop-img-div">
                                                                                                                                 <img src="../kohinoor/images/cOURTYARd.jpg"
-                                                                                                                                    class="full-width"
+                                                                                                                                    class="full-width image"
                                                                                                                                     alt=" courtyard">
                                                                                                                                 <p class="prop-name">
                                                                                                                                     courtyard
@@ -2391,10 +2391,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

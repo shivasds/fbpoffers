@@ -851,7 +851,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Vaishnavi/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="VAISHNAVI SERENE">
                                                                                                     <p class="prop-name">
                                                                                                         VAISHNAVI SERENE</p>
@@ -934,7 +934,7 @@
                                                                                                                     onclick="pricePopProjectname('VAISHNAVI OASIS');">
                                                                                                                     <div class="prop-img-div">
                                                                                                                         <img src="../Vaishnavi/images/2.jpg"
-                                                                                                                            class="full-width"
+                                                                                                                            class="full-width image"
                                                                                                                             alt=" VAISHNAVI OASIS">
                                                                                                                         <p class="prop-name">
                                                                                                                             VAISHNAVI OASIS
@@ -1016,7 +1016,7 @@
                                                                                                 onclick="pricePopProjectname('VAISHNAVI NORTH 24');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Vaishnavi/images/3.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" VAISHNAVI NORTH 24">
                                                                                                     <p class="prop-name">
                                                                                                     VAISHNAVI NORTH 24
@@ -1099,7 +1099,7 @@
                                                                                                 onclick="pricePopProjectname('VAISHNAVI GARDENIA');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Vaishnavi/images/4.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" VAISHNAVI GARDENIA">
                                                                                                     <p class="prop-name">
                                                                                                     VAISHNAVI GARDENIA
@@ -1181,7 +1181,7 @@
                                                                                                 onclick="pricePopProjectname('VAISHNAVI COMMUNE');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Vaishnavi/images/5.jpg" style="height: 197px;"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" VAISHNAVI COMMUNE">
                                                                                                     <p class="prop-name">
                                                                                                     VAISHNAVI COMMUNE
@@ -1262,7 +1262,7 @@
                                                                                                 onclick="pricePopProjectname('VAISHNAVI TERRACES');">
                                                                                                 <div class="prop-img-div">
                                                                                                     <img src="../Vaishnavi/images/6.jpg"
-                                                                                                    class="full-width"
+                                                                                                    class="full-width image"
                                                                                                     alt=" VAISHNAVI TERRACES">
                                                                                                     <p class="prop-name">
                                                                                                     VAISHNAVI TERRACES
@@ -1342,7 +1342,7 @@
                                                                                                                         onclick="pricePopProjectname('Vaishnavi Prime');">
                                                                                                                         <div class="prop-img-div">
                                                                                                                             <img src="../Vaishnavi/images/7.jpg"
-                                                                                                                                class="full-width"
+                                                                                                                                class="full-width image"
                                                                                                                                 alt=" Vaishnavi Prime">
                                                                                                                             <p class="prop-name">
                                                                                                                                 Vaishnavi Prime
@@ -1424,7 +1424,7 @@
                                                                                                     onclick="pricePopProjectname('VAISHNAVI NAKSHATRA');">
                                                                                                     <div class="prop-img-div">
                                                                                                         <img src="../Vaishnavi/images/8.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" VAISHNAVI NAKSHATRA">
                                                                                                         <p class="prop-name">
                                                                                                         VAISHNAVI NAKSHATRA
@@ -1504,7 +1504,7 @@
                                                                                                     onclick="pricePopProjectname('Vaishnavi Orchids');">
                                                                                                     <div class="prop-img-div">
                                                                                                         <img src="../Vaishnavi/images/9.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" Vaishnavi Orchids">
                                                                                                         <p class="prop-name">
                                                                                                         Vaishnavi Orchids
@@ -1584,7 +1584,7 @@
                                                                                                     onclick="pricePopProjectname('VAISHNAVI SYMPHONY');">
                                                                                                     <div class="prop-img-div">
                                                                                                         <img src="../Vaishnavi/images/10.jpg" style="height: 197px;"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" VAISHNAVI SYMPHONY">
                                                                                                         <p class="prop-name">
                                                                                                         VAISHNAVI SYMPHONY
@@ -1663,7 +1663,7 @@
                                                                                                     onclick="pricePopProjectname('VAISHNAVI RATHNAM');">
                                                                                                     <div class="prop-img-div">
                                                                                                         <img src="../Vaishnavi/images/12.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt=" VAISHNAVI RATHNAM">
                                                                                                         <p class="prop-name">
                                                                                                         VAISHNAVI RATHNAM
@@ -2536,10 +2536,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 

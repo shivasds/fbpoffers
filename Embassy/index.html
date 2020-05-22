@@ -851,7 +851,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Embassy/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="EMBASSY EDGE">
                                                                                                     <p class="prop-name">
                                                                                                         EMBASSY EDGE</p>
@@ -937,7 +937,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Embassy/images/2.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="FOUR SEASONS PRIVATE RESIDENCES">
                                                                                                     <p class="prop-name">
                                                                                                         FOUR SEASONS PRIVATE RESIDENCES</p>
@@ -1023,7 +1023,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Embassy/images/3.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Green Olive">
                                                                                                     <p class="prop-name">
                                                                                                        EMBASSY LAKE TERRACES</p>
@@ -1108,7 +1108,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Embassy/images/4.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="EMBASSY GROVE">
                                                                                                     <p class="prop-name">
                                                                                                         24K Stargaze</p>
@@ -1194,7 +1194,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Embassy/images/5.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Green Olive">
                                                                                                     <p class="prop-name">
                                                                                                        EMBASSY SPRINGS</p>
@@ -1280,7 +1280,7 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Embassy/images/6.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Green Olive">
                                                                                                     <p class="prop-name">
                                                                                                        EMBASSY RESIDENCY</p>
@@ -2162,10 +2162,13 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 
