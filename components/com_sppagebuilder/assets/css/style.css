@@ -668,9 +668,7 @@ right: 0;
     font-size: 23px!important;
     box-shadow: 10px 6px 10px #55505047;
   }
-
-@media only screen and (min-width: 767px) {
-
+ 
   .prop-img-div img:hover {
 	opacity: 0.3!important;
   }
@@ -696,6 +694,7 @@ right: 0;
   .prop-img-div {
 	position: relative;
   }
+  @media only screen and (min-width: 767px) {
   .btn-success{
 	color: #0b0b0b!important;
     background-color: #ffc10e!important;
