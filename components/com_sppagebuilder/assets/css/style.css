@@ -695,6 +695,7 @@ right: 0;
 	position: relative;
   }
   @media only screen and (min-width: 767px) {
+	
   .btn-success{
 	color: #0b0b0b!important;
     background-color: #ffc10e!important;
@@ -704,5 +705,18 @@ right: 0;
 	  border-radius: 30px!important;
   }
  
-  
+  .hidden-lg{
+	  display: block;
+  }
+  .hidden-xs{
+	display: none;
+  }
+}
+@media only screen and (min-width: 767px) {
+.hidden-lg{
+	display: none;
+}
+.hidden-xs{
+  display: block;
+}
 }
