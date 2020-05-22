@@ -649,5 +649,40 @@ right: 0;
 .prop-img-div img {
     transition: ease all 1s;
 	height: 200px;
+}
 
+@media only screen and (min-width: 767px) {
+
+  .prop-img-div img:hover {
+	opacity: 0.3!important;
+  }
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  .prop-img-div:hover .middle {
+	opacity: 1;
+  }
+
+  .text {
+	color: white;
+	font-size: 16px;
+  }
+  .prop-img-div {
+	position: relative;
+  }
+  .btn-success{
+	  color: #fff;
+	  background-color: #449d44;
+	  border-color: #398439;
+	  padding: 8px 21px!important;
+	  border-radius: 30px!important;
+  }
 }
