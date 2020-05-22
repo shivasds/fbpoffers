@@ -392,3 +392,7 @@ marginTop=-Math.round((iframeH- containerH)/ 2);
 }
 row.find(".sppb-youtube-video-bg iframe").css({maxWidth:"1000%",marginLeft:marginLeft,marginTop:marginTop,width:iframeW,height:iframeH});}
 $(window).on('load resize',function(){$('.sppb-row-have-ext-bg').each(function(){sppbVideoBackgroundResize($(this));});});})(jQuery);
+
+       
+        
+           
