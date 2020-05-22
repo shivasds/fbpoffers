@@ -848,17 +848,20 @@
                                                                                     <div class="latest-post sppb-col-sm-4">
                                                                                         <div class="prop-div">
                                                                                             <a class="move"
-                                                                                                onclick="pricePopProjectname('Arvind Skylands')">
+                                                                                               >
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Arvind-Smartspace/images/1.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Arvind Skylands">
                                                                                                     <p class="prop-name">
                                                                                                         Arvind Skylands</p>
                                                                                                     <p class="prop-price">
                                                                                                        Rs 56.02 Lac Onward<sup>*</sup>
                                                                                                     </p>
+                                                                                                    <div class="middle">
+                                                                                                        <button class="btn btn-success text" onclick="pricePopProjectname('Arvind Skylands Register',' near Manyata Tech Park');" >Register</button>
+                                                                                                      </div>
                                                                                                 </div>
                                                                                             </a>
                                                                                             <div class="prop-details">
@@ -935,13 +938,16 @@
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Arvind-Smartspace/images/2.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Arvind Expansia ">
                                                                                                     <p class="prop-name">
                                                                                                         Arvind Expansia </p>
                                                                                                     <p class="prop-price">
                                                                                                         On Request<sup>*</sup>
                                                                                                     </p>
+                                                                                                    <div class="middle">
+                                                                                                        <button class="btn btn-success text" onclick="pricePopProjectname('Arvind Expansia Register','  Maheswari Nagar');" >Register</button>
+                                                                                                      </div>
                                                                                                 </div>
                                                                                             </a>
                                                                                             <div class="prop-details">
@@ -1017,17 +1023,20 @@
                                                                                     <div class="latest-post sppb-col-sm-4">
                                                                                         <div class="prop-div">
                                                                                             <a class="move"
-                                                                                                onclick="pricePopProjectname('Arvind Sporcia');">
+                                                                                               >
                                                                                                 <div class="prop-img-div">
 
                                                                                                     <img src="../Arvind-Smartspace/images/3.jpg"
-                                                                                                        class="full-width"
+                                                                                                        class="full-width image"
                                                                                                         alt="Arvind Sporcia">
                                                                                                     <p class="prop-name">
                                                                                                         Arvind Sporcia</p>
                                                                                                     <p class="prop-price">
                                                                                                       Rs 65 Lac Onwards<sup>*</sup>
                                                                                                     </p>
+                                                                                                    <div class="middle">
+                                                                                                        <button class="btn btn-success text" onclick="pricePopProjectname('Arvind Sporcia','  Outer Ring Road, Rachenahalli');" >Register</button>
+                                                                                                      </div>
                                                                                                 </div>
                                                                                             </a>
                                                                                             <div class="prop-details">
@@ -1294,6 +1303,7 @@
             </div>
         </section>
             <script>
+                
         function cityo(argument) {
              //alert(argument);
           if(argument=="other")
@@ -1396,39 +1406,42 @@
     <!-- ================ price popup ==================== -->
 
 
-    <div class="modal fade in" tabindex="-1" role="dialog" id="price-pop" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">×</span></button>
+ 
+<div class="modal fade in" tabindex="-1" role="dialog" id="price-pop" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
 
 
-                    <h4 class="modal-title pricepopupTit">Price </h4>
-                </div>
-                <div class="modal-body">
-                    <!-- <p>Please enter the details below to get the detailed pricing information.</p> -->
-                    <form id="price-popup" action="../contact.php" name="main-popup" method="POST">
-                        <div class="form-group col-md-12 pd">
-                            <input type="text" class="form-control" placeholder="Name" name="name" id="name">
-                        </div>
-                        <div class="form-group col-md-12 pd">
-                            <input type="tel" placeholder="Phone" class="form-control" name="telephone" id="telephone"
-                                required>
-                        </div>
-                        <div class="form-group col-md-12 pd">
-                            <input type="email" class="form-control" name="email" placeholder="Email">
-                        </div>
-                        <div class="form-group col-md-12 pd">
-                            <input type="text" class="form-control" placeholder="Your Message" name="sugg" id="sugg">
-                        </div>
-                        <input type="hidden" name="enqproject" id="enqproject" value="" />
-                        <button type="submit" onclick="rightmodalopentiming()" class="btn btn-default price-btn" value="proceed">SUBMIT</button>
-                    </form>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div>
+                <h4 class="modal-title pricepopupTit">Price </h4>
+            </div>
+            <div class="modal-body">
+                <!-- <p>Please enter the details below to get the detailed pricing information.</p> -->
+                <form id="price-popup" action="../contact.php" name="main-popup" method="POST">
+                    <div class="form-group col-md-12 pd">
+                        <input type="text" class="form-control" placeholder="Name" name="name" id="name">
+                    </div>
+                    <div class="form-group col-md-12 pd">
+                        <input type="tel" placeholder="Phone" class="form-control" name="telephone" id="telephone"
+                            required>
+                    </div>
+                    <div class="form-group col-md-12 pd">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-12 pd">
+                        <input type="text" class="form-control" placeholder="Your Message" name="sugg" id="sugg">
+                    </div>
+                    <input type="hidden" name="enqproject" id="enqproject" value="" />
+                    <input type="hidden" name="address" id="addressmodelInput" value="" />
+                    <button type="submit" onclick="rightmodalopentiming()" class="btn btn-default price-btn" value="proceed">SUBMIT</button>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
 
     <div class="modal fade" id="center-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1616,6 +1629,9 @@
    
     <!-- ==================================== -->
 
+   
+    <!-- ==================================== -->
+
 
     <!--<script src="media/jui/js/jquery.minbb68.js?6d335272cfe947fe63a1dc6d722f2ca8" type="text/javascript"></script>-->
     <script src="media/jui/js/jquery-noconflictbb68bb68.js?6d335272cfe947fe63a1dc6d722f2ca8"
@@ -1688,6 +1704,15 @@
 
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
+
+            jQuery(".middle").hover(function() { 
+    var parentDiv=jQuery(this).closest('.prop-img-div');
+    console.log(parentDiv)
+    jQuery(parentDiv[0]).find('img').css("opacity", ".3"); 
+  }, function() { 
+    jQuery('.prop-img-div img').css("opacity", "1"); 
+  }); 
+
             wow = new WOW({
                 boxClass: 'wow',
                 animateClass: 'animated',
@@ -1754,7 +1779,7 @@
 
 
     <script>
-        function openCity(id) {
+        function openCity(id){
          
             jQuery(".tabbing li").removeClass('active')
             jQuery(".tabbingSection div").addClass('hidden')
@@ -1879,35 +1904,17 @@
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
 
 
-         // setTimeout(function(){jQuery("#center-modal").modal('show')},5000)
-
-        // function rightmodalopentiming(){
-           
-        //     //jQuery("#myModalright").modal('show')
-        //     setTimeout(function(){ jQuery("#myModalright").modal('show') }, 5000);
-        // }
-        // function leftmodalopentiming(){
-        //     //jQuery("#myModalleft").modal('show')
-
-        // setTimeout(function(){jQuery("#center-modal").modal('show')},5000)
-
-        // function rightmodalopentiming(){
-           
-           
-        //     setTimeout(function(){ jQuery("#myModalright").modal('show') }, 5000);
-        // }
-        // function leftmodalopentiming(){
-            
-        //     setTimeout(function(){ jQuery("#myModalleft").modal('show') }, 5000);
-        // }
     </script>
 
 
@@ -1973,7 +1980,7 @@
             }
 
             if (name != "" && mobileno != "") {
-                var tags = 'House Of Arvind-Smartspace';
+                var tags = 'House Of Hiranandani';
                 var webToLeadData = {
                     'firstname': name,
                     'email': emailid,

@@ -2176,6 +2176,15 @@
 
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
+
+          $(".middle").hover(function() { 
+              var parentDiv=$(this).closest('.prop-img-div');
+              console.log(parentDiv)
+                $(parentDiv[0]).find('img').css("opacity", ".3"); 
+            }, function() { 
+                $('.prop-img-div img').css("opacity", "1"); 
+            }); 
+
             wow = new WOW({
                 boxClass: 'wow',
                 animateClass: 'animated',
@@ -2242,7 +2251,7 @@
 
 
     <script>
-        function openCity(id) {
+        function openCity(id){
          
             jQuery(".tabbing li").removeClass('active')
             jQuery(".tabbingSection div").addClass('hidden')
@@ -2367,24 +2376,15 @@
  
 
     <script>
-        function pricePopProjectname(project) {
+        function pricePopProjectname(project,id) {
             var projname = project;
+           
+            
             jQuery('.pricepopupTit').html(projname);
             jQuery('#enqproject').val(projname);
+            jQuery("#addressmodelInput").val(id)
             jQuery('#price-pop').modal('show');
         }
- 
-         // setTimeout(function(){jQuery("#center-modal").modal('show')},5000)
-
-        // function rightmodalopentiming(){
-           
-        //     //jQuery("#myModalright").modal('show')
-        //     setTimeout(function(){ jQuery("#myModalright").modal('show') }, 5000);
-        // }
-        // function leftmodalopentiming(){
-        //     //jQuery("#myModalleft").modal('show')
-
-           // setTimeout(function(){jQuery("#center-modal").modal('show')},5000)
 
 
     </script>
