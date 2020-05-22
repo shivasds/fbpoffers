@@ -5401,7 +5401,7 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
     <!-- ================ price popup ==================== -->
 
 
-<div class="modal fade in" tabindex="-1" role="dialog" id="price-pop" data-backdrop="static" data-keyboard="false">
+    <div class="modal fade in" tabindex="-1" role="dialog" id="price-pop" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -5413,7 +5413,7 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
                 </div>
                 <div class="modal-body">
                     <!-- <p>Please enter the details below to get the detailed pricing information.</p> -->
-                    <form id="price-popup" action="../contact.php" name="main-popup" method="POST">
+                    <form id="price-popup" action="/../contact.php" name="main-popup" method="POST">
                         <div class="form-group col-md-12 pd">
                             <input type="text" class="form-control" placeholder="Name" name="name" id="name">
                         </div>
@@ -5424,6 +5424,7 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
                         <div class="form-group col-md-12 pd">
                             <input type="email" class="form-control" name="email" placeholder="Email">
                         </div>
+                        <input type="hidden" name="builder" id="builder" value="">
                         
                         <input type="hidden" name="enqproject" id="enqproject" value="" />
                         <input type="hidden" name="address" id="addressmodelInput" value="" />
@@ -5433,6 +5434,14 @@ Any dispute arising out of this offer is Subjected to Bangalore jurisdiction and
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div>
+
+    <script>
+        
+        var URL = window.location; 
+        document.getElementById("builder").value = URL;
+
+
+    </script>
 
     <div class="modal fade" id="center-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
