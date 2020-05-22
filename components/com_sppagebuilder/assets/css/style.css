@@ -658,6 +658,16 @@ right: 0;
 	  padding: 8px 21px!important;
 	  border-radius: 30px!important;
   }
+  .btn-blue{
+	color: #0b0b0b!important;
+    background-color: #29abf6!important;
+    border-color: #29abf6!important;
+    font-weight: 800!important;
+    padding: 14px 66px!important;
+    border-radius: 30px!important;
+    font-size: 23px!important;
+    box-shadow: 10px 6px 10px #55505047;
+  }
 
 @media only screen and (min-width: 767px) {
 
@@ -694,5 +704,6 @@ right: 0;
 	  padding: 8px 21px!important;
 	  border-radius: 30px!important;
   }
+ 
   
 }
