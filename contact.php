@@ -64,7 +64,7 @@ $recipient="shiva@secondsdigital.com.test-google-a.com";
 
 
 
-$message="\Full Basket Properties Offers \n";
+$message="\Full Basket Properties Landmark \n";
 
 
 //$file_to_attach = 'PATH_OF_YOUR_FILE_HERE';
@@ -73,7 +73,7 @@ $message="\Full Basket Properties Offers \n";
 
 //subject
 //========
-$subject="Full Basket Properties Offers";
+$subject="Full Basket Properties Landmark";
 
 //message
 //=======
@@ -96,7 +96,7 @@ $subject="Full Basket Properties Offers";
  }*/
 $message = '<table width="500" border="0" align="left" cellpadding="0" cellspacing="0" bgcolor="#FFF" style="font-weight: 700;font-size: 12px;color: #666;font-family:Arial, Helvetica, sans-serif; background-color:#FFFFFF;">
   <tr bgcolor="#055b82">
-    <td width="500" colspan="2" style="font-weight: 700;font-size: 13px;color: #FFF; border: 1px solid #CCC; border-bottom:none; border-right:none; padding:10px;">Full Basket Properties Offers</td>
+    <td width="500" colspan="2" style="font-weight: 700;font-size: 13px;color: #FFF; border: 1px solid #CCC; border-bottom:none; border-right:none; padding:10px;">Full Basket Properties Landmark</td>
   </tr>
   <tr>
     <td width="250" style="border: 1px solid #CCC; border-bottom:none; border-right:none; padding:10px;">Name</td>
